@@ -19,6 +19,7 @@
 		67AF100527A3C965009F6DED /* MobilliumBuilders in Frameworks */ = {isa = PBXBuildFile; productRef = 67AF100427A3C965009F6DED /* MobilliumBuilders */; };
 		67AF100827A3C970009F6DED /* TinyConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = 67AF100727A3C970009F6DED /* TinyConstraints */; };
 		67AF100B27A3CD60009F6DED /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF100A27A3CD60009F6DED /* Calculator.swift */; };
+		67AF100D27A3CE4E009F6DED /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF100C27A3CE4E009F6DED /* CalculatorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		67AF0FF427A3C92F009F6DED /* Week15_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week15_2UITests.swift; sourceTree = "<group>"; };
 		67AF0FF627A3C92F009F6DED /* Week15_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week15_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67AF100A27A3CD60009F6DED /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		67AF100C27A3CE4E009F6DED /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				67AF0FEA27A3C92F009F6DED /* Week15_2Tests.swift */,
+				67AF100C27A3CE4E009F6DED /* CalculatorTest.swift */,
 			);
 			path = "Week15-2Tests";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67AF0FEB27A3C92F009F6DED /* Week15_2Tests.swift in Sources */,
+				67AF100D27A3CE4E009F6DED /* CalculatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
