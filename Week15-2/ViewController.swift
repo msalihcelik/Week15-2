@@ -92,3 +92,42 @@ extension ViewController {
         
     }
 }
+
+// MARK: - Actions
+extension ViewController {
+    
+    private func addTargets() {
+        multiplyButton.addTarget(self, action: #selector(multiplyButtonTapped), for: .touchUpInside)
+        divideButton.addTarget(self, action: #selector(divideButtonTapped), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
+        subButton.addTarget(self, action: #selector(subButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc
+    func multiplyButtonTapped() {
+        guard let firstNum = Double(firstTextField.text ?? "") else { return }
+        guard let secondNum = Double(secondTextField.text ?? "") else { return }
+        outputLabel.text = String(Calculator.multiplyNum(firstNum, secondNum))
+    }
+    
+    @objc
+    func divideButtonTapped() {
+        guard let firstNum = Double(firstTextField.text ?? "") else { return }
+        guard let secondNum = Double(secondTextField.text ?? ""), secondNum != 0 else { return }
+        outputLabel.text = String(Calculator.divideNum(firstNum, secondNum))
+    }
+    
+    @objc
+    func addButtonTapped() {
+        guard let firstNum = Double(firstTextField.text ?? "") else { return }
+        guard let secondNum = Double(secondTextField.text ?? "") else { return }
+        outputLabel.text = String(Calculator.addNum(firstNum, secondNum))
+    }
+    
+    @objc
+    func subButtonTapped() {
+        guard let firstNum = Double(firstTextField.text ?? "") else { return }
+        guard let secondNum = Double(secondTextField.text ?? "") else { return }
+        outputLabel.text = String(Calculator.subNum(firstNum, secondNum))
+    }
+}
